@@ -1,12 +1,12 @@
 {
-    "contents" : "---\ntitle       : Shiny Application for Diamonds Report\nsubtitle    : Reproducible Pitch Presentation\nauthor      : Tianxiang Liu\njob         : 05 Sep 2014\nframework   : io2012        # {io2012, html5slides, shower, dzslides, ...}\nhighlighter : highlight.js  # {highlight.js, prettify, highlight}\nhitheme     : tomorrow      # \nwidgets     : []            # {mathjax, quiz, bootstrap}\nmode        : selfcontained # {standalone, draft}\nknit        : slidify::knit2slides\n---\n\n## Read-And-Delete\n\n1. Edit YAML front matter\n2. Write using R Markdown\n3. Use an empty line followed by three dashes to separate slides!\n\n--- .class #id \n\n## Slide 2\n\n\n\n\n",
+    "contents" : "---\ntitle       : Shiny App of Diamonds Report\nsubtitle    : Reproducible Pitch Presentation\nauthor      : Tianxiang Liu\njob         : 05 Sep 2014\nframework   : io2012        # {io2012, html5slides, shower, dzslides, ...}\nhighlighter : highlight.js  # {highlight.js, prettify, highlight}\nhitheme     : solarized_light      # \nwidgets     : [mathjax, quiz, bootstrap]            # {mathjax, quiz, bootstrap}\nmode        : selfcontained # {standalone, draft}\nknit        : slidify::knit2slides\ngithub:\n  user: ivanliu1989\n  repo: Data-Science-Data-Products\n--- \n\n## 1. Introduction of Application\n\nThis is a presentation to give a breif description about the shiny application of Diamonds Report.</br>\nTo begin with, there are four main functions/pages in this application, which are 'summary', 'detailed report', 'download datasets' and 'exchange rate'. </br>\nUsers can access to above four pages via the bar on the top of each page as following: </br>\n![width](\"menu.png\")</br>\nIn details, a user can do following things in each page:\n\n--- .class #id \n\n## 2. Summary Page\n\n\n---\n\n## 3. Detailed Reports Page\n\n\n---\n\n## 4. Download Datasets Page\n\n\n---\n\n## 5. Exchange Rate Page\n\n\n",
     "created" : 1409921127693.000,
     "dirty" : false,
     "encoding" : "UTF-8",
     "folds" : "",
-    "hash" : "1990029466",
+    "hash" : "2751016203",
     "id" : "333CEE8A",
-    "lastKnownWriteTime" : 1409921270,
+    "lastKnownWriteTime" : 1409923181,
     "path" : "C:/Users/Ivan.Liuyanfeng/Desktop/Data_Mining_Work_Space/Data-Science-Data-Products/resume/Tianxiang Liu/index.Rmd",
     "project_path" : "Tianxiang Liu/index.Rmd",
     "properties" : {
