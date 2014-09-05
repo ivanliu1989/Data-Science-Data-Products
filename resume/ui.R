@@ -26,6 +26,7 @@ shinyUI(navbarPage("AfterPlus Product Report", inverse = FALSE, collapsable = FA
                                 )
                             ),
                             fluidRow(
+                                p(em("Documentation:",a("Diamonds Product Report",href="Documentation.html")))
 #                                 sidebarPanel(
 #                                     
 #                                 ),
@@ -69,7 +70,7 @@ shinyUI(navbarPage("AfterPlus Product Report", inverse = FALSE, collapsable = FA
                                                tableOutput('table_download')
                                            )
                                        )),
-                              tabPanel("Market Information", 
+                              tabPanel("Exchange Rate", 
                                        sidebarLayout(
                                            sidebarPanel(
                                                helpText("Tips:"),
@@ -78,7 +79,7 @@ shinyUI(navbarPage("AfterPlus Product Report", inverse = FALSE, collapsable = FA
                                                dateRangeInput("dates", "Date range", 
                                                               start = "2014-01-01", 
                                                               end = as.character(Sys.Date())),
-                                               actionButton("get", "Get Stock"),
+                                               actionButton("get", "Get Exchange Rate"),
                                                br(),br(),
                                                checkboxInput("log", "Plot y axis on log scale", value = FALSE),
                                                checkboxInput("adjust", "Adjust prices for inflation", value = FALSE)
