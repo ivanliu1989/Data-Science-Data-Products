@@ -51,40 +51,6 @@ shinyUI(navbarPage("AfterPlus Pricing Management", inverse = FALSE, collapsable 
                                 )
                             )),
                    navbarMenu("More",
-                              tabPanel("Upload Datasets",
-                                       sidebarLayout(
-                                           sidebarPanel(
-                                               fileInput('file1', 'Choose file to upload',
-                                                         accept = c(
-                                                             'text/csv',
-                                                             'text/comma-separated-values',
-                                                             'text/tab-separated-values',
-                                                             'text/plain',
-                                                             '.csv',
-                                                             '.xlsx',
-                                                             '.tsv'
-                                                         )
-                                               ),
-                                               tags$hr(),
-                                               checkboxInput('header', 'Header', TRUE),
-                                               radioButtons('sep', 'Separator',
-                                                            c(Comma=',',
-                                                              Semicolon=';',
-                                                              Tab='\t'),
-                                                            ','),
-                                               textInput('sht', 'Sheet Index',value=1),
-                                               tags$hr(),
-                                               p('If you want a sample .csv or .tsv file to upload,',
-                                                 'you can first download the sample',
-                                                 a(href = 'mtcars.csv', 'mtcars.csv'), 'or',
-                                                 a(href = 'pressure.tsv', 'pressure.tsv'),
-                                                 'files, and then try uploading them.'
-                                               )
-                                           ),
-                                           mainPanel(
-                                               tableOutput('contents')
-                                           )
-                                       )),
                               tabPanel("Download Datasets",
                                        sidebarLayout(
                                            sidebarPanel(
