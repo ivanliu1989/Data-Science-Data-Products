@@ -7,9 +7,9 @@ library(xlsx)
 shinyServer(function(input,output){
     ## Summary
     output$myChart1 <- renderChart({
-        names(iris) = gsub("\\.", "", names(iris))
-        p1 <- rPlot(input$x, input$y, data = iris, color = "Species", 
-                    facet = "Species", type = 'point')
+        names(diamonds) = gsub("\\.", "", names(diamonds))
+        p1 <- rPlot(input$x, input$y, data = diamonds[1:1000,], color = input$z, 
+                    facet = input$z, type = 'point')
         p1$set(xScale='ordinal',yScale='linear',width=600)
         p1$addParams(dom = 'myChart1')
         return(p1)

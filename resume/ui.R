@@ -8,24 +8,28 @@ shinyUI(navbarPage("AfterPlus Product Report", inverse = FALSE, collapsable = FA
                                 sidebarPanel(
                                     selectInput(inputId = "x",
                                                 label = "Choose X",
-                                                choices = c('SepalLength', 'SepalWidth', 'PetalLength', 'PetalWidth'),
-                                                selected = "SepalLength"),
+                                                choices = c('clarity', 'depth', 'price', 'carat'),
+                                                selected = "price"),
                                     selectInput(inputId = "y",
                                                 label = "Choose Y",
-                                                choices = c('SepalLength', 'SepalWidth', 'PetalLength', 'PetalWidth'),
-                                                selected = "SepalWidth")
+                                                choices = c('clarity', 'depth', 'price', 'carat'),
+                                                selected = "caret"),
+                                    selectInput(inputId= "z",
+                                                label = "Choose Category",
+                                                choices = c('cut','color','clarity'),
+                                                selected = 'cut')
                                 ),
                                 mainPanel(
                                     showOutput("myChart1", "polycharts")
                                 )
                             ),
                             fluidRow(
-                                sidebarPanel(
-                                    
-                                ),
-                                mainPanel(
-#                                    showOutput("myChart2", "Leaflet")
-                                )
+#                                 sidebarPanel(
+#                                     
+#                                 ),
+#                                 mainPanel(
+# #                                    showOutput("myChart2", "Leaflet")
+#                                 )
                             )
                    ),
                    tabPanel("Detailed Report",
