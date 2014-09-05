@@ -1,0 +1,16 @@
+{
+    "contents" : "---\ntitle       : Shiny Application for Diamonds Report\nsubtitle    : Reproducible Pitch Presentation\nauthor      : Tianxiang Liu\njob         : 05 Sep 2014\nframework   : io2012        # {io2012, html5slides, shower, dzslides, ...}\nhighlighter : highlight.js  # {highlight.js, prettify, highlight}\nhitheme     : tomorrow      # \nwidgets     : []            # {mathjax, quiz, bootstrap}\nmode        : selfcontained # {standalone, draft}\nknit        : slidify::knit2slides\n---\n\n## Read-And-Delete\n\n1. Edit YAML front matter\n2. Write using R Markdown\n3. Use an empty line followed by three dashes to separate slides!\n\n--- .class #id \n\n## Slide 2\n\n\n\n\n",
+    "created" : 1409921127693.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "1990029466",
+    "id" : "333CEE8A",
+    "lastKnownWriteTime" : 1409921270,
+    "path" : "C:/Users/Ivan.Liuyanfeng/Desktop/Data_Mining_Work_Space/Data-Science-Data-Products/resume/Tianxiang Liu/index.Rmd",
+    "project_path" : "Tianxiang Liu/index.Rmd",
+    "properties" : {
+    },
+    "source_on_save" : false,
+    "type" : "r_markdown"
+}
