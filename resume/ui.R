@@ -26,7 +26,8 @@ shinyUI(navbarPage("AfterPlus Product Report", inverse = FALSE, collapsable = FA
                                 )
                             ),
                             fluidRow(
-                                p(em("Documentation:",a("Diamonds Product Report",href="Documentation.html")))
+                                p(em("Documentation:",a("Diamonds Product Report",href="Documentation.html"))),
+                                p(em("Github Documentation:",a("Data-Science-Data-Products",href="https://github.com/ivanliu1989/Data-Science-Data-Products/blob/master/resume/documentation.md")))
 #                                 sidebarPanel(
 #                                     
 #                                 ),
