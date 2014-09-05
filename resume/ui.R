@@ -2,7 +2,7 @@ library(shiny)
 library(ggplot2)  # for the diamonds dataset
 require(rCharts)
 options(shiny.maxRequestSize = 9*1024^2)
-shinyUI(navbarPage("AfterPlus Pricing Management", inverse = FALSE, collapsable = FALSE,
+shinyUI(navbarPage("AfterPlus Product Report", inverse = FALSE, collapsable = FALSE,
                    tabPanel("Summary",
                             fluidRow(
                                 sidebarPanel(
@@ -24,7 +24,7 @@ shinyUI(navbarPage("AfterPlus Pricing Management", inverse = FALSE, collapsable 
                                     
                                 ),
                                 mainPanel(
-                                    showOutput("myChart2", "Leaflet")
+#                                    showOutput("myChart2", "Leaflet")
                                 )
                             )
                    ),
