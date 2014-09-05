@@ -4,6 +4,7 @@ source("helpers.R")
 library(ggplot2)
 require(rCharts)
 library(xlsx)
+diamonds <- diamonds[1:1000,]
 shinyServer(function(input,output){
     ## Summary
     output$myChart1 <- renderChart({
@@ -60,9 +61,13 @@ shinyServer(function(input,output){
     
     ## Download Datasets
     datasetInput <- reactive({
-        switch(input$dataset,
-               "Dongdamen" = mtcars,
-               "GJ" = rock)
+        switch(input$datasetD,
+               "Fair Cut" = diamonds[which(diamonds$cut=='Fair'),],
+               "Good Cut" = diamonds[which(diamonds$cut=='Good'),],
+               "Very Good Cut" = diamonds[which(diamonds$cut=='Very Good'),],
+               "Premium Cut" = diamonds[which(diamonds$cut=='Premium'),],
+               "Ideal Cut" = diamonds[which(diamonds$cut=='Ideal'),],
+               "All" = diamonds)
     })
     
     output$table_download <- renderTable({
@@ -70,7 +75,7 @@ shinyServer(function(input,output){
     })
     
     output$downloadData <- downloadHandler(
-        filename = function() { paste(input$dataset, '.csv', sep='') },
+        filename = function() { paste(input$datasetD, '.csv', sep='') },
         content = function(file) {
             write.csv(datasetInput(), file)
         }

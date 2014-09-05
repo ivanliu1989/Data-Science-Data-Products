@@ -45,7 +45,7 @@ shinyUI(navbarPage("AfterPlus Product Report", inverse = FALSE, collapsable = FA
                                         tabPanel('Good Cut', dataTableOutput('mytable2')),
                                         tabPanel('Very Good Cut', dataTableOutput('mytable3')),
                                         tabPanel('Premium Cut', dataTableOutput('mytable4')),
-                                        tabPanel('Indeal Cut', dataTableOutput('mytable5'))
+                                        tabPanel('Ideal Cut', dataTableOutput('mytable5'))
                                     )
                                 )
                             )),
@@ -53,8 +53,10 @@ shinyUI(navbarPage("AfterPlus Product Report", inverse = FALSE, collapsable = FA
                               tabPanel("Download Datasets",
                                        sidebarLayout(
                                            sidebarPanel(
-                                               selectInput("dataset", "Choose a dataset:", 
-                                                           choices = c("Dongdamen", "GJ")),
+                                               selectInput("datasetD", "Choose a dataset:", 
+                                                           choices = c("Fair Cut", "Good Cut", 
+                                                                       "Very Good Cut", "Premium Cut", 
+                                                                       "Ideal Cut", "All"), 'All'),
                                                downloadButton('downloadData', 'Download')
                                            ),
                                            mainPanel(
@@ -64,7 +66,7 @@ shinyUI(navbarPage("AfterPlus Product Report", inverse = FALSE, collapsable = FA
                               tabPanel("Market Information", 
                                        sidebarLayout(
                                            sidebarPanel(
-                                               helpText("Select a stock to examine. Information will be collected from yahoo finance."),
+                                               helpText("Select a currency. Information will be collected from yahoo finance."),
                                                textInput("symb", "Symbol", "AUD"),
                                                dateRangeInput("dates", "Date range", 
                                                               start = "2014-01-01", 
