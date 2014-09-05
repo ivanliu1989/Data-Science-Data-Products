@@ -9,9 +9,6 @@ hitheme     : solarized_light      #
 widgets     : [mathjax, quiz, bootstrap]            # {mathjax, quiz, bootstrap}
 mode        : selfcontained # {standalone, draft}
 knit        : slidify::knit2slides
-github:
-  user: ivanliu1989
-  repo: Data-Science-Data-Products
 --- 
 
 ## 1. Introduction of Application
@@ -25,24 +22,14 @@ Next Slide
 --- .class #id 
 
 ## 2. Summary Page
-Summary page is a summary of all diamond product information. Users are able to visualize data from different aspects or attributes of products. </br></br>
-Product details have been visualized by a point plot and users are able to customize their own summary chart by selecting different variables users want to explore on x or y axis.  </br></br>
-You can also choose the categories of diamonds to reflect them on the diagram. </br></br>
-Next slide contains a simple example of how to customise the diagram </br></br>
-
----
-
-## 2. Summary Page - Example
-</br>
+Summary page is a summary of all diamond product information. Users are able to visualize data from different aspects or attributes of products. Product details have been visualized by a point plot and users are able to customize their own summary chart by selecting different variables users want to explore on x or y axis. You can also choose the categories of diamonds to reflect them on the diagram. Following is a simple example of how to customise the diagram: </br>
 ```{r,comment = NA, message = F, echo = F, results='asis'}
 require(rCharts)
 require(knitr)
-r1 <- rPlot(mpg~wt | am+vs, data=mtcars, color='gear',type='point',height = 400,width = 600,margins = list(left=80,top=40,right=40,bottom=40))
+r1 <- rPlot(mpg~wt | am+vs, data=mtcars, color='gear',type='point',height = 400,width = 600)
 r1$addControls('x','wt',names(mtcars))
-r1$addControls('y','mpg',names(mtcars))
 r1
 ```
-</br>
 
 ---
 

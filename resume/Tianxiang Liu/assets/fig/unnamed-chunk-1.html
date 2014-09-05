@@ -34,15 +34,11 @@
     		<select class='form-control' ng-model="opts.x.var" 
           ng-options="ctl for ctl in controls.x.values">   
     		</select><br>
-        <label><b>Select  y :</b></label>
-    		<select class='form-control' ng-model="opts.y.var" 
-          ng-options="ctl for ctl in controls.y.values">   
-    		</select><br>
       </form>
     </div>
     <div class='col-md-9'>
       <div class="bs-docs-example">
-        <div id='chart2d784c1671a8' class='rChart '>
+        <div id='chartffc360737de' class='rChart '>
           <svg></svg>
         </div>
       </div>
@@ -52,7 +48,7 @@
 <script type='text/javascript'>
 function DemoCtrl($scope){
   $scope.chartParams = {
- "dom": "chart2d784c1671a8",
+ "dom": "chartffc360737de",
 "width":    700,
 "height":    400,
 "layers": [
@@ -76,13 +72,7 @@ function DemoCtrl($scope){
 "color": "gear",
 "type": "point",
 "height":    400,
-"width":    600,
-"margins": {
- "left":     80,
-"top":     40,
-"right":     40,
-"bottom":     40 
-} 
+"width":    600 
 } 
 ],
 "facet": {
@@ -92,7 +82,7 @@ function DemoCtrl($scope){
 },
 "guides": [],
 "coord": [],
-"id": "chart2d784c1671a8" 
+"id": "chartffc360737de" 
 }
   _.each($scope.chartParams.layers, function(el){
     el.data = polyjs.data(el.data)
@@ -104,12 +94,6 @@ function DemoCtrl($scope){
 "value": "wt",
 "values": [ "mpg", "cyl", "disp", "hp", "drat", "wt", "qsec", "vs", "am", "gear", "carb" ],
 "label": "Select  x :" 
-},
-"y": {
- "name": "y",
-"value": "mpg",
-"values": [ "mpg", "cyl", "disp", "hp", "drat", "wt", "qsec", "vs", "am", "gear", "carb" ],
-"label": "Select  y :" 
 } 
 }
   $scope.opts = $scope.chartParams.layers[0];

@@ -9,9 +9,6 @@ hitheme     : solarized_light      #
 widgets     : [mathjax, quiz, bootstrap]            # {mathjax, quiz, bootstrap}
 mode        : selfcontained # {standalone, draft}
 knit        : slidify::knit2slides
-github:
-  user: ivanliu1989
-  repo: Data-Science-Data-Products
 --- 
 
 ## 1. Introduction of Application
@@ -25,17 +22,8 @@ Next Slide
 --- .class #id 
 
 ## 2. Summary Page
-Summary page is a summary of all diamond product information. Users are able to visualize data from different aspects or attributes of products. </br></br>
-Product details have been visualized by a point plot and users are able to customize their own summary chart by selecting different variables users want to explore on x or y axis.  </br></br>
-You can also choose the categories of diamonds to reflect them on the diagram. </br></br>
-Next slide contains a simple example of how to customise the diagram </br></br>
-
----
-
-## 2. Summary Page - Example
-</br>
-<iframe src=' assets/fig/unnamed-chunk-1.html ' scrolling='no' frameBorder='0' seamless class='rChart polycharts ' id=iframe- chart2d784c1671a8 ></iframe> <style>iframe.rChart{ width: 100%; height: 400px;}</style>
-</br>
+Summary page is a summary of all diamond product information. Users are able to visualize data from different aspects or attributes of products. Product details have been visualized by a point plot and users are able to customize their own summary chart by selecting different variables users want to explore on x or y axis. You can also choose the categories of diamonds to reflect them on the diagram. Following is a simple example of how to customise the diagram: </br>
+<iframe src=' assets/fig/unnamed-chunk-1.html ' scrolling='no' frameBorder='0' seamless class='rChart polycharts ' id=iframe- chartffc360737de ></iframe> <style>iframe.rChart{ width: 100%; height: 400px;}</style>
 
 ---
 
