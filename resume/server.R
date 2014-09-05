@@ -25,12 +25,21 @@ shinyServer(function(input,output){
 #     })
     ## Detailed Report
     output$mytable1 <- renderDataTable({
-        diamonds[, input$show_vars_tb1, drop = FALSE]
-    }, options = list(bSortClasses = TRUE, aLengthMenu = c(5, 15, 30), iDisplayLength = 5))
+        diamonds[which(diamonds$cut=='Fair'), input$show_vars_tb1, drop = FALSE]
+    }, options = list(bSortClasses = TRUE, aLengthMenu = c(5, 15, 30), iDisplayLength = 15))
     output$mytable2 <- renderDataTable({
-        mtcars[, input$show_vars_tb2, drop = FALSE]
-    }, options = list(bSortClasses = TRUE, aLengthMenu = c(5, 15, 30), iDisplayLength = 5))
-    
+        diamonds[which(diamonds$cut=='Good'), input$show_vars_tb1, drop = FALSE]
+    }, options = list(bSortClasses = TRUE, aLengthMenu = c(5, 15, 30), iDisplayLength = 15))
+    output$mytable3 <- renderDataTable({
+        diamonds[which(diamonds$cut=='Very Good'), input$show_vars_tb1, drop = FALSE]
+    }, options = list(bSortClasses = TRUE, aLengthMenu = c(5, 15, 30), iDisplayLength = 15))
+    output$mytable4 <- renderDataTable({
+        diamonds[which(diamonds$cut=='Premium'), input$show_vars_tb1, drop = FALSE]
+    }, options = list(bSortClasses = TRUE, aLengthMenu = c(5, 15, 30), iDisplayLength = 15))
+    output$mytable5 <- renderDataTable({
+        diamonds[which(diamonds$cut=='Ideal'), input$show_vars_tb1, drop = FALSE]
+    }, options = list(bSortClasses = TRUE, aLengthMenu = c(5, 15, 30), iDisplayLength = 15))
+        
     ## Market Information
     dataInput <- reactive({  
         getSymbols(input$symb, src = "yahoo", 

@@ -35,22 +35,17 @@ shinyUI(navbarPage("AfterPlus Product Report", inverse = FALSE, collapsable = FA
                    tabPanel("Detailed Report",
                             sidebarLayout(
                                 sidebarPanel(
-                                    conditionalPanel(
-                                        'input.dataset === "Dongdamen"',
                                         checkboxGroupInput('show_vars_tb1','Columns in Dongdamen to show:',
-                                                           names(diamonds), selected = names(diamonds))
-                                    ),
-                                    conditionalPanel(
-                                        'input.dataset === "GongCha"',
-                                        checkboxGroupInput('show_vars_tb2','Columns in Dongdamen to show:',
-                                                           names(mtcars), selected = names(mtcars))
-                                    )
+                                                           names(diamonds), selected = names(diamonds))       
                                 ),
                                 mainPanel(
                                     tabsetPanel(
                                         id='dataset',
-                                        tabPanel('Dongdamen', dataTableOutput('mytable1')),
-                                        tabPanel('GongCha', dataTableOutput('mytable2'))
+                                        tabPanel('Fair Cut', dataTableOutput('mytable1')),
+                                        tabPanel('Good Cut', dataTableOutput('mytable2')),
+                                        tabPanel('Very Good Cut', dataTableOutput('mytable3')),
+                                        tabPanel('Premium Cut', dataTableOutput('mytable4')),
+                                        tabPanel('Indeal Cut', dataTableOutput('mytable5'))
                                     )
                                 )
                             )),
