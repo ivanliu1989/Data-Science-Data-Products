@@ -1,0 +1,9 @@
+base
+Defaults
+ggplot2
+knitr
+quantmod
+rCharts
+TTR
+xts
+zoo

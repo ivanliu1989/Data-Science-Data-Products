@@ -1,0 +1,1 @@
+n1 <- rPlot(diamonds[1:500,]$price~diamonds[1:500,]$carat, facet =diamonds[1:500,]$cut, data = diamonds[1:500,], color = diamonds[1:500,]$cut, type = 'point')

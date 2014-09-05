@@ -15,30 +15,50 @@ github:
 --- 
 
 ## 1. Introduction of Application
-
 This is a presentation to give a breif description about the shiny application of Diamonds Report.</br>
 To begin with, there are four main functions/pages in this application, which are 'summary', 'detailed report', 'download datasets' and 'exchange rate'. </br>
-Users can access to above four pages via the bar on the top of each page as following: </br>
-![width]("menu.png")</br>
-In details, a user can do following things in each page:
+Users can access to above four pages via the bar on the top of each page as following: </br></br>
+![width](menu.png)</br></br>
+In details, a user can do following things in each page: </br> </br>
+Next Slide
 
 --- .class #id 
 
 ## 2. Summary Page
+Summary page is a summary of all diamond product information. Users are able to visualize data from different aspects or attributes of products. </br></br>
+Product details have been visualized by a point plot and users are able to customize their own summary chart by selecting different variables users want to explore on x or y axis.  </br></br>
+You can also choose the categories of diamonds to reflect them on the diagram. </br></br>
+Next slide contains a simple example of how to customise the diagram </br></br>
 
+---
+
+## 2. Summary Page - Example
+</br>
+<iframe src=' assets/fig/unnamed-chunk-1.html ' scrolling='no' frameBorder='0' seamless class='rChart polycharts ' id=iframe- chart2d784c1671a8 ></iframe> <style>iframe.rChart{ width: 100%; height: 400px;}</style>
+</br>
 
 ---
 
 ## 3. Detailed Reports Page
-
+Detailed Reports page allow users to view the details of diamonds based on different cut types.</br>
+Users can select the variables they want to include in the table. </br>
+Users can sort table by different variables and search record based on their preferences. </br>
+Users can also determine how many records they want to show on one page. </br>
+Following is a screenshoot of detailed reports page </br>
+![width](2.png)</br></br>
 
 ---
 
 ## 4. Download Datasets Page
-
+Download Datasets page allow users to download the entire datasets of diamond products information.Users can select a type of specific diamonds that they are interested. And the required table will be displayed at the right part of page. </br>
+After that, users should click the download button in the picture above. </br>
+The downloaded datasets will be a .csv format file on users' drive. </br>
+![width](3.png)</br></br>
 
 ---
 
 ## 5. Exchange Rate Page
-
-
+Sometimes there will be international trade for diamonds business. So a real-time exchange rate function seems to be necessary in this application.  </br>
+In the last page, users can obtain the latest exchange rate regarding the selected currency from the chart above.  </br>
+Users are required to select a currency type first, then information will be collected from yahoo finance and be reflected to the line chart below. </br>
+![plot of chunk unnamed-chunk-2](assets/fig/unnamed-chunk-2.png) 
