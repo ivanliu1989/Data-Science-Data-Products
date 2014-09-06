@@ -22,8 +22,17 @@ Next Slide
 --- .class #id 
 
 ## 2. Summary Page
-Summary page is a summary of all diamond product information. Users are able to visualize data from different aspects or attributes of products. Product details have been visualized by a point plot and users are able to customize their own summary chart by selecting different variables users want to explore on x or y axis. You can also choose the categories of diamonds to reflect them on the diagram. Following is a simple example of how to customise the diagram: </br>
-<iframe src=' assets/fig/unnamed-chunk-1.html ' scrolling='no' frameBorder='0' seamless class='rChart polycharts ' id=iframe- chart245458c0724b ></iframe> <style>iframe.rChart{ width: 100%; height: 400px;}</style>
+Summary page is a summary of all diamond product information. Users are able to visualize data from different aspects or attributes of products. Product details have been visualized by a point plot and users are able to customize their own summary chart by selecting different variables users want to explore on x or y axis. You can also choose the categories of diamonds to compare different groups of diamonds.</br> 
+Following is a list of all variables users are able to adjust in summary chart. </br></br>
+
+```r
+require(ggplot2)
+names(diamonds[,1:7])
+```
+
+```
+[1] "carat"   "cut"     "color"   "clarity" "depth"   "table"   "price"  
+```
 
 ---
 
@@ -38,9 +47,9 @@ Following is a screenshoot of detailed reports page </br>
 ---
 
 ## 4. Download Datasets Page
-Download Datasets page allow users to download the entire datasets of diamond products information.Users can select a type of specific diamonds that they are interested. And the required table will be displayed at the right part of page. </br>
-After that, users should click the download button in the picture above. </br>
-The downloaded datasets will be a .csv format file on users' drive. </br>
+Download Datasets page allow users to download the entire datasets of diamond products information.Users can select a specific type of  diamonds that they are interested. And the required table will be displayed on the right side of the page. </br>
+After that, users need to click the download button as the picture below. </br>
+
 ![width](3.png)</br></br>
 
 ---
